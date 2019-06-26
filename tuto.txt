@@ -18,4 +18,4 @@ konfigurasi
 *add step
 5.1 type -> custom jar
 5.2 name -> serah
-3.4 jar file, cari lokasi jar di bucket pilih jar file sebelumnya
+5.4 jar file, cari lokasi jar di bucket pilih jar file sebelumnya

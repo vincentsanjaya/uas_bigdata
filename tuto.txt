@@ -1,0 +1,21 @@
+1. create a key pair
+2. disk drive in the cloud => untuk taruh input data dan ambil output data serta program
+bucket adalah sebuah hard drive di cloud, bucket itu unik dan dapat dilakukan reverse url agar tidak ada duplikasi
+create an s3 bucket 
+3. map reduce cluster (EMR)
+konfigurasi
+3.1 buat nama cluster lalu ceklis logging
+3.2 pilih S3 folder (bucket yang uda dibuat sebelumnya) akan menjadi root 
+3.3 launch mode -> cluster
+3.4 pilih konfigurasi software yang akan disesuaikan dengan program java
+3.5 hardware configuration, pilih tipe instance, banyak instance menandakan banyak komputer yang akan bekerja semakin banyak instane maka semakin cepat prosesnya
+3.6 pilih key pair yang sudah dibuat misal mapreduce
+3.7 create cluster
+
+4. upload program map reduce nya sambil menunggu clusternya selesai provisioning
+
+5. tab "steps" merupakan tempat dimana tugas mapreduce atau sebuah step, disana sudah ada 1 step ini step yang associated dengan setting up the cluster kita akan menambah 1 lagi
+*add step
+5.1 type -> custom jar
+5.2 name -> serah
+3.4 jar file, cari lokasi jar di bucket pilih jar file sebelumnya
